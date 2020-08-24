@@ -4,7 +4,7 @@
 <img align="left" width="0" height="192px" hspace="10"/>
 
 
-## Proyecto final Modelos 2: FrivUD
+## Enrega Final: Implementación de arboles rojinegros
 - Ariel Ernesto Forero Meneses  - **COD. 20181020135**
 - Jose David Ramirez Maldonado  - **COD. 20181020047**
 
