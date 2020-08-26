@@ -103,7 +103,6 @@ public class ArbolRojiNegro {
                 t = k.padre.padre.izquierda; // tio
                 if (t.color == 1){
                     //caso 1
-                    //3.1
                     t.color = 0;
                     k.padre.color = 0;
                     k.padre.padre.color = 1;
@@ -111,12 +110,12 @@ public class ArbolRojiNegro {
                     
                 } else {
                     if(k == k.padre.izquierda){
-                        // caso 2 //3.2.2
+                        // caso 2
                         k = k.padre;
                         rotarDerecha(k);
                     }
                     
-                    // caso 3 // 3.2.1
+                    // caso 3
                     k.padre.color = 0;
                     k.padre.padre.color = 1;
                     rotarIzquierda(k.padre.padre);
@@ -126,18 +125,18 @@ public class ArbolRojiNegro {
                 t = k.padre.padre.derecha; // tio
                 
                 if (t.color == 1) {
-                    // caso 1 al otro lado // 3.1 mirror
+                    // caso 1 al otro lado
                     t.color = 0;
                     k.padre.color = 0;
                     k.padre.padre.color = 1;
                     k = k.padre.padre;
                 } else {
                     if(k == k.padre.derecha){
-                        // caso 2 al otro lado // 3.2.2 mirror
+                        // caso 2 al otro lado 
                         k = k.padre;
                         rotarIzquierda(k);
                     }
-                    // caso 3 al otro lado // 3.2.1 mirror
+                    // caso 3 al otro lado 
                     k.padre.color = 0;
                     k.padre.padre.color = 1;
                     rotarDerecha(k.padre.padre);
@@ -440,7 +439,6 @@ public class ArbolRojiNegro {
      * @param lado dependiendo de su valor se almacenan caracteres en la cadena espacio
      */
     private void verArbolRojiNegro(NodoArbol raiz, String espacio, boolean lado) {
-		// print the tree structure on the screen
 	   	if (raiz != nil) {
 		   System.out.print(espacio);
 		   if (lado) {
